@@ -10,7 +10,7 @@ function App() {
     }, [user])
 
   return (
-    user ? user.map(e => <Page1 name={e.name}/>)  : <p>No data</p>
+    user ? <Page1 name = {user[1]}/> : <>no data</>
   )
 }
 
